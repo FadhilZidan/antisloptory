@@ -1,0 +1,39 @@
+{
+  "name": "anti-slop-fiction",
+  "version": "1.0.0",
+  "description": "Modular AI Agent skills to eliminate AI story slop, purple prose, therapy-speak, and cliché narrative tropes in creative writing.",
+  "type": "module",
+  "main": "scripts/installer.mjs",
+  "bin": {
+    "anti-slop-fiction": "./scripts/installer.mjs"
+  },
+  "scripts": {
+    "start": "node ./scripts/installer.mjs",
+    "install-skills": "node ./scripts/installer.mjs",
+    "test": "node --check ./scripts/installer.mjs"
+  },
+  "files": [
+    "scripts",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muhammadfadhilzidan/anti-slop-fiction.git"
+  },
+  "keywords": [
+    "ai-agent",
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "storytelling",
+    "creative-writing",
+    "anti-slop",
+    "fiction",
+    "skills"
+  ],
+  "author": "Muhammad Fadhil Zidan Marpaung",
+  "license": "MIT"
+}
