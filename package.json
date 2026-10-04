@@ -1,7 +1,7 @@
 {
   "name": "anti-slop-fiction",
   "version": "1.0.0",
-  "description": "Modular AI Agent skills to eliminate AI story slop, purple prose, therapy-speak, and cliché narrative tropes in creative writing.",
+  "description": "Modular AI agent skills that strip cliché, purple prose, therapy-speak dialogue, and moralizing endings from fiction.",
   "type": "module",
   "main": "scripts/installer.mjs",
   "bin": {
@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node ./scripts/installer.mjs",
     "install-skills": "node ./scripts/installer.mjs",
-    "test": "node --check ./scripts/installer.mjs"
+    "check": "node ./scripts/check-repo.mjs",
+    "test": "node --check ./scripts/installer.mjs && node ./scripts/check-repo.mjs"
   },
   "files": [
     "scripts",
@@ -18,9 +19,16 @@
     "README.md",
     "LICENSE"
   ],
+  "engines": {
+    "node": ">=18"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/muhammadfadhilzidan/anti-slop-fiction.git"
+    "url": "git+https://github.com/FadhilZidan/antisloptory.git"
+  },
+  "homepage": "https://github.com/FadhilZidan/antisloptory#readme",
+  "bugs": {
+    "url": "https://github.com/FadhilZidan/antisloptory/issues"
   },
   "keywords": [
     "ai-agent",

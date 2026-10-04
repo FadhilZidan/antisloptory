@@ -4,7 +4,7 @@
  * installer.mjs - Installer CLI interaktif & otomatis untuk anti-slop-fiction
  * 
  * Penggunaan:
- *   npx anti-slop-fiction
+ *   npx github:FadhilZidan/antisloptory
  *   node scripts/installer.mjs --target global
  *   node scripts/installer.mjs --target workspace
  *   node scripts/installer.mjs --target claude
@@ -59,7 +59,7 @@ function printBanner() {
 function printHelp() {
   printBanner();
   console.log(`Penggunaan:
-  npx anti-slop-fiction [opsi]
+  npx github:FadhilZidan/antisloptory [opsi]
 
 Opsi:
   -t, --target <opsi>   Pilihan target instalasi:

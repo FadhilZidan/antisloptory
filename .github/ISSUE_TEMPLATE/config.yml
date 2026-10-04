@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Laporan keamanan
+    url: https://github.com/FadhilZidan/antisloptory/security/advisories/new
+    about: Kerentanan dilaporkan secara privat, bukan lewat issue publik.
+  - name: Panduan kontribusi
+    url: https://github.com/FadhilZidan/antisloptory/blob/main/CONTRIBUTING.md
+    about: Baca dulu sebelum mengirim PR.

@@ -1,0 +1,38 @@
+name: Laporan pola slop
+description: Klise AI yang belum tercatat di anti-patterns.md
+title: "[slop] "
+labels: ["slop-pattern"]
+body:
+  - type: textarea
+    id: phrase
+    attributes:
+      label: Frasa atau pola
+      description: Tulis persis seperti yang dihasilkan AI, dalam bahasa aslinya.
+      placeholder: '"Matanya berkilat penuh tekad"'
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Konteks
+      description: Genre, model AI (kalau tahu), dan seberapa sering muncul.
+    validations:
+      required: true
+  - type: textarea
+    id: replacement
+    attributes:
+      label: Pengganti yang lebih baik
+      description: Tulis untuk adegan nyata, dengan benda atau tindakan yang spesifik.
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Modul yang paling cocok
+      options:
+        - antislop-core
+        - antislop-pacing
+        - antislop-ending
+        - Tidak yakin
+    validations:
+      required: true

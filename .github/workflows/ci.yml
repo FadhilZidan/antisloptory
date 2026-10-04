@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Syntax check scripts
+        run: |
+          node --check scripts/installer.mjs
+          node --check scripts/check-repo.mjs
+
+      - name: Repo consistency
+        run: node scripts/check-repo.mjs
+
+      - name: Installer dry run
+        run: node scripts/installer.mjs --target workspace --dry-run

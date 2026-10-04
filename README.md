@@ -1,150 +1,134 @@
-# 🖋️ anti-slop-fiction
+<p align="center">
+  <img src="./assets/banner.jpg" alt="antisloptory: naskah ketikan dengan baris-baris klise dicoret tinta merah" width="100%" />
+</p>
 
-> **Modular AI Agent Skills to Eliminate Story Slop, Purple Prose, and Moralizing Endings in Creative Writing.**
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2ea44f" alt="License: MIT"></a>
+  <a href="https://github.com/FadhilZidan/antisloptory/actions/workflows/ci.yml"><img src="https://github.com/FadhilZidan/antisloptory/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/FadhilZidan/antisloptory/releases"><img src="https://img.shields.io/github/v/release/FadhilZidan/antisloptory?label=version&color=1f6feb" alt="Version"></a>
+  <img src="https://img.shields.io/badge/bahasa-ID%20%2B%20EN-orange" alt="Bahasa: Indonesia dan Inggris">
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform: Antigravity | Claude | Cursor | Windsurf](https://img.shields.io/badge/Platform-Antigravity%20%7C%20Claude%20%7C%20Cursor%20%7C%20Windsurf-brightgreen.svg)](#cara-pemasangan)
-[![Language: Indonesian & English](https://img.shields.io/badge/Language-ID%20%26%20EN-orange.svg)](skills/references/anti-patterns.md)
+<h1 align="center">antisloptory</h1>
 
-`anti-slop-fiction` adalah rangkaian keahlian (*skills*) modular untuk **AI Coding/Storytelling Agents** (seperti Google Antigravity, Claude Code, Cursor, Windsurf, dan ChatGPT) yang dirancang untuk mencegah, mendiagnosis, dan memoles cerita fiksi agar terbebas dari klise murahan buatan AI dan memiliki kedalaman sastrawi layaknya karya pengarang manusia berpengalaman.
+<p align="center">
+  Skill untuk agen AI yang membuang klise, prosa ungu, dialog terapi, dan khotbah moral dari fiksi.<br>
+  Ini <strong>filter, bukan gaya</strong>: tidak ada suara pengarang yang dipaksakan. Plot dan suara tetap milik Anda.
+</p>
 
----
+## Lihat bedanya
 
-## 🧐 Masalah yang Diatasi (The AI Slop Problem)
+Adegan yang sama, ditulis dua kali. Cuplikan dari [examples.md](skills/references/examples.md).
 
-Ketika Large Language Model (LLM) diminta menulis fiksi, mereka kerap menghasilkan pola teks yang seragam dan menjemukan:
-- **Refleks Tubuh Klise**: Karakter selalu *"mengembuskan napas yang tidak disadari telah ia tahan"* (*breath they didn't know they were holding*), *"tersenyum miring/sinis"* (*smirk*), atau merasakan *"hawa dingin merayapi tulang belakang"*.
-- **Dialog Psikoterapi**: Karakter berkonflik berbicara seperti konselor perkawinan di seminar psikologi modern (*"Perasaanmu valid, tapi kita perlu memproses trauma ini..."*).
-- **Prosa Ungu & Metafora Basi**: Deskripsi abstrak seperti *"permadani waktu"* (*tapestry*), *"simfoni suara malam"* (*symphony*), dan *"bukti nyata"* (*testament to*).
-- **Pacing Monoton**: Panjang kalimat yang seragam tanpa dinamika ketegangan.
-- **Khotbah Moral di Akhir Cerita**: Kebiasaan kompulsif AI merangkum hikmah kehidupan dan arti persahabatan di paragraf terakhir.
+| Tanpa antisloptory | Dengan antisloptory |
+|:--|:--|
+| Rian mengembuskan napas yang tidak disadari telah ia tahan selama ini. Hawa dingin menjalar di tulang belakangnya saat pintu gudang tua itu berderit terbuka. Di sana berdiri Kevin. Senyum miring terukir di bibirnya. | Lampu merkuri di ujung gang padam sejak dua minggu lalu. Rian meraba dinding seng gudang untuk mencari pegangan; embun malam membuatnya licin dan berbau karat. Kevin duduk di atas peti kayu, menyalakan pemantik yang berderak tanpa api. Sekali. Dua kali. |
+| *"Aku tahu trauma masa lalumu membuatmu merasa rentan, tapi balas dendam bukanlah jawabannya!"* | *"Kunci brankasnya nggak ada di rumah paman," kata Rian. Ujung sepatunya menendang serpihan botol sirup di lantai.* |
+| Ia menyadari bahwa kemenangan sejati bukanlah tentang mengalahkan musuh, melainkan tentang berdamai dengan kegelapan di dalam diri kita sendiri. | Kevin mengeluarkan amplop cokelat tebal yang sudutnya sudah koyak, lalu melemparnya ke tumpukan karung semen di depan kaki Rian. |
 
----
+Kolom kiri: napas tertahan, tulang belakang dingin, senyum miring, dialog konselor, dan paragraf hikmah. Kolom kanan: plotnya sama, tapi ketegangan datang dari benda, bau, dan apa yang tidak diucapkan.
 
-## 🧩 Modul Keahlian (Modular Skills)
+## Modul
 
-Repositori ini terbagi menjadi 3 modul independen yang dapat digunakan bersamaan atau terpisah:
+Tiga skill yang berdiri sendiri. Pakai satu, dua, atau ketiganya.
 
-### 1. [`skills/antislop-core/`](./skills/antislop-core/SKILL.md) — Inti Filter Diksi & Karakter
-- **Larangan Klise Fisiologis**: Mengeliminasi 100% refleks fisik generik AI.
-- **Eliminasi Kata Filter (Showing vs Telling)**: Mengganti kata perantara (*merasa, melihat, mendengar, tampak*) dengan interaksi sensorik fisik langsung.
-- **Psikologi & Agensi Karakter**: Memastikan karakter memiliki keinginan egois (*selfish want*), cacat kepribadian nyata (*fatal flaw*), dan konsekuensi pilihan yang tidak bisa dibatalkan (*irreversible*).
-- **Subteks Percakapan**: Melarang dialog terapi; menggantinya dengan pembelaan diri, kebohongan, dan defleksi manusiawi.
-- **Eliminasi Penanda AI Formulaik**: Menghapus transisi klise (*Furthermore, In conclusion, It is important to note*), buzzwords (*Delve, Tapestry*), dan retorika simetris/netralitas palsu.
-- **Ketidaksempurnaan Produktif (*Productive Imperfections*)**: Membolehkan patahan kalimat (*sentence fragments*), sentuhan kolokial membumi, dan suntikan suara/perspektif (*voice*) subjektif.
-- **Preservasi Makna Inti (*Preserve Core Meaning*)**: Memastikan seluruh fakta asli dan titik plot tetap utuh saat merombak total gaya permukaan dan cara penyampaian.
+| Skill | Tugasnya | Pakai saat |
+|:--|:--|:--|
+| [`antislop-core`](skills/antislop-core/SKILL.md) | Diksi, klise fisiologis, kata filter, psikologi karakter, subteks dialog, penanda AI formulaik | Selalu. Ini filter dasarnya. |
+| [`antislop-pacing`](skills/antislop-pacing/SKILL.md) | Ritme kalimat dan paragraf, geometri adegan, pergeseran kuasa, transisi | Adegan terasa datar atau terlalu rata panjang kalimatnya. |
+| [`antislop-ending`](skills/antislop-ending/SKILL.md) | Potong dua kalimat terakhir, tolak resolusi rapi, tutup pada benda fisik | Menulis atau mengaudit penutup bab dan cerita. |
 
-### 2. [`skills/antislop-pacing/`](./skills/antislop-pacing/SKILL.md) — Ritme Adegan & Dialog
-- **Variasi Struktur Kalimat & Ukuran Paragraf (The Rhythm Engine)**: Menggabungkan kalimat pendek bertenaga (*punchy staccato*) dan kalimat panjang kompleks (*legato*), menghindari paragraf seragam, serta mematahkan pola ritme terprediksi.
-- **Geometri Adegan (Enter Late, Leave Early)**: Memulai adegan saat konflik sudah menyala dan memotongnya tepat setelah titik balik selesai.
-- **Pergeseran Kekuasaan (*Power Shifts*)**: Memastikan setiap adegan mengubah keseimbangan kendali antar-tokoh.
-- **Transisi Mulus**: Menghilangkan frasa perpindahan waktu malas (*"Keesokan harinya...", "Beberapa hari berlalu..."*).
+Dua berkas pendukung dipakai bersama oleh ketiga skill:
 
-### 3. [`skills/antislop-ending/`](./skills/antislop-ending/SKILL.md) — Pencegah Akhir Sok Moralis
-- **Aturan Pemotongan 2 Kalimat Terakhir (The 2-Sentence Cut)**: Menghapus kesimpulan moral yang terdengar seperti kutipan media sosial.
-- **Penolakan Resolusi Rapi (*No Tidy Endings*)**: Menolak perdamaian instan tanpa luka dan mukjizat tanpa petunjuk (*no deus ex machina*).
-- **Menutup Cerita pada Objek Fisik**: Mengakhiri narasi pada benda konkret atau tindakan nyata, bukan renungan abstrak.
+- [`anti-patterns.md`](skills/references/anti-patterns.md): daftar frasa terlarang, metafora basi, dan dialog klise (ID dan EN) beserta penggantinya.
+- [`examples.md`](skills/references/examples.md): studi kasus sebelum dan sesudah.
 
----
+## Pasang
 
-## 📚 Berkas Referensi (References)
+### Installer (rekomendasi)
 
-- **[`skills/references/anti-patterns.md`](./skills/references/anti-patterns.md)** — Kamus hitam lengkap berisi frasa terlarang, metafora basi, dan dialog klise dalam Bahasa Indonesia dan Bahasa Inggris beserta alternatif solusinya.
-- **[`skills/references/examples.md`](./skills/references/examples.md)** — Studi kasus perbandingan langsung antara draf mentah AI (*Slop*) versus versi polesan kriya (*Tajam*).
+Butuh Node.js 18 atau lebih baru. Satu perintah, lalu pilih lokasi:
 
----
-
-## 🚀 Cara Pemasangan (Installation)
-
-### Opsi 1: Menggunakan NPX / Node.js (Rekomendasi)
-Jalankan perintah berikut di terminal:
 ```bash
-npx anti-slop-fiction
-```
-Skrip installer interaktif akan memandu Anda untuk memasang skill ke target yang diinginkan:
-- **Antigravity Global**: `~/.gemini/config/skills/`
-- **Workspace Proyek**: `.agents/skills/`
-- **Claude Code**: `~/.claude/skills/`
-- **Jalur Kustom**: Menentukan direktori target sendiri
-
-Anda juga dapat menjalankannya langsung tanpa prompt:
-```bash
-# Pasang ke Antigravity Global
-node scripts/installer.mjs --target global
-
-# Pasang ke Workspace saat ini
-node scripts/installer.mjs --target workspace
-
-# Pasang ke Claude Code
-node scripts/installer.mjs --target claude
+npx github:FadhilZidan/antisloptory
 ```
 
----
+Installer menyalin ketiga skill beserta `references/` ke lokasi yang Anda pilih:
 
-### Opsi 2: Pemasangan Manual di Berbagai Agent
+| Target | Lokasi |
+|:--|:--|
+| `global` | `~/.gemini/config/skills/` (Antigravity, semua proyek) |
+| `workspace` | `.agents/skills/` (proyek saat ini) |
+| `claude` | `~/.claude/skills/` (Claude Code) |
+| `custom` | path pilihan Anda lewat `--dest` |
 
-#### Google Antigravity IDE / CLI
-Salin modul yang Anda butuhkan dari folder `skills/` ke salah satu lokasi berikut:
-- **Global (Semua Proyek)**: `~/.gemini/config/skills/`
-- **Workspace Lokal**: `<root-proyek>/.agents/skills/`
+Tanpa prompt, misalnya untuk skrip:
 
-Agent Antigravity akan otomatis mendeteksi dan memuat skill ketika Anda mendiskusikan penulisan atau penyuntingan fiksi.
+```bash
+npx github:FadhilZidan/antisloptory --target workspace
+npx github:FadhilZidan/antisloptory --target custom --dest ./my-skills
+npx github:FadhilZidan/antisloptory --dry-run   # lihat apa yang akan disalin
+```
 
-#### Claude Code
-Salin folder skill ke `~/.claude/skills/` atau masukkan aturan dari `SKILL.md` ke dalam berkas `CLAUDE.md`.
-
-#### Cursor / Windsurf
-Salin isi dari `skills/antislop-core/SKILL.md`, `skills/antislop-pacing/SKILL.md`, atau `skills/antislop-ending/SKILL.md` ke dalam berkas konfigurasi proyek:
-- `.cursorrules` (untuk Cursor)
-- `.windsurfrules` (untuk Windsurf)
-- `AGENTS.md` (untuk Copilot / Agent lainnya)
-
-#### ChatGPT (Custom GPTs / Project Instructions)
-Buka menu pengaturan Custom GPT atau Project Instructions, lalu tempelkan teks dari `skills/antislop-core/SKILL.md` dan `skills/references/anti-patterns.md` ke bagian **Instructions**.
-
----
-
-## 💬 Contoh Pemanggilan di Chat AI
-
-Setelah skill terpasang di agent Anda, Anda cukup memberikan prompt seperti:
-
-### 1. Menulis Cerita Baru:
-> *"Tulis adegan pembuka cerita kriminal di pelabuhan Tanjung Priok tahun 1998. Terapkan modul **antislop-core** dan **antislop-pacing**. Pastikan tidak ada dialog sok bijak dan karakter punya motif egois."*
-
-### 2. Mengaudit & Memoles Naskah:
-> *"Tolong periksa bagian penutup bab ini menggunakan **antislop-ending**. Hapus paragraf khotbah jika ada dan tutup cerita pada benda fisik konkret: [tempelkan teks cerita]"*
-
----
-
-## 📁 Struktur Direktori Repositori
+### Claude Code (plugin)
 
 ```text
-anti-slop-fiction/
-│
-├── .github/
-│   └── workflows/
-│       └── test.yml          # Otomatisasi validasi file markdown
-├── skills/
-│   ├── antislop-core/
-│   │   └── SKILL.md          # Inti aturan filter teks, diksi, dan psikologi karakter
-│   ├── antislop-pacing/
-│   │   └── SKILL.md          # Aturan ritme adegan, transisi, dan dialog
-│   └── antislop-ending/
-│   │   └── SKILL.md          # Pencegah resolusi murahan & akhir sok moralis
-│   ├── references/
-│   │   ├── anti-patterns.md  # Kamus hitam frasa AI & klise yang dilarang
-│   │   └── examples.md       # Studi kasus: "Sebelum (Slop)" vs "Sesudah (Tajam)"
-├── scripts/
-│   └── installer.mjs         # Skrip otomatisasi setup npx (opsional)
-├── package.json              # Konfigurasi package & command installer
-├── LICENSE                   # Lisensi open source (MIT)
-└── README.md                 # Dokumentasi utama repositori
+/plugin marketplace add FadhilZidan/antisloptory
+/plugin install antisloptory@antisloptory
 ```
 
----
+### Manual
 
-## 📄 Lisensi
+Clone repo ini, lalu salin folder yang dibutuhkan. Salin `skills/references/` juga, karena ketiga skill merujuk ke sana.
 
-Proyek ini dilisensikan di bawah lisensi open source [MIT](LICENSE).
+| Agen | Caranya |
+|:--|:--|
+| Google Antigravity | Salin `skills/*` ke `~/.gemini/config/skills/` atau `<proyek>/.agents/skills/`. |
+| Claude Code | Salin `skills/*` ke `~/.claude/skills/`. |
+| Cursor | Tempel isi `SKILL.md` ke `.cursor/rules/antislop-fiction.mdc` atau `.cursorrules`. |
+| Windsurf | Tempel isi `SKILL.md` ke `.windsurfrules`. |
+| Copilot dan agen lain | Tempel isi `SKILL.md` ke `AGENTS.md`. |
+| ChatGPT (Custom GPT / Project) | Tempel `antislop-core/SKILL.md` dan `references/anti-patterns.md` ke kolom *Instructions*. |
 
-Copyright (c) 2026 Muhammad Fadhil Zidan Marpaung.
+### Perbarui dan hapus
+
+Jalankan installer lagi untuk memperbarui; berkas lama ditimpa. Untuk menghapus, buang folder `antislop-core`, `antislop-pacing`, `antislop-ending`, dan `references` dari lokasi pemasangan.
+
+## Pakai
+
+Agen yang mendukung skill akan memuatnya sendiri saat percakapan menyentuh penulisan fiksi. Menyebut nama modul membuatnya lebih pasti:
+
+> Tulis adegan pembuka cerita kriminal di pelabuhan Tanjung Priok, 1998. Pakai **antislop-core** dan **antislop-pacing**. Tokoh utamanya punya motif egois.
+
+> Periksa penutup bab ini dengan **antislop-ending**. Kalau ada paragraf khotbah, hapus, dan tutup pada benda fisik: [tempel teks]
+
+> Audit naskah ini dengan **antislop-core**. Daftar dulu temuannya, jangan langsung ubah.
+
+## Struktur repo
+
+```text
+antisloptory/
+├── skills/
+│   ├── antislop-core/SKILL.md      # filter dasar: diksi, karakter, dialog
+│   ├── antislop-pacing/SKILL.md    # ritme, adegan, transisi
+│   ├── antislop-ending/SKILL.md    # penutup tanpa khotbah
+│   └── references/
+│       ├── anti-patterns.md        # daftar frasa terlarang + pengganti
+│       └── examples.md             # sebelum vs sesudah
+├── scripts/
+│   ├── installer.mjs               # installer npx
+│   └── check-repo.mjs              # validasi yang dijalankan CI
+├── .claude-plugin/                 # manifest plugin Claude Code
+├── .github/                        # CI, template issue dan PR
+└── assets/                         # gambar README
+```
+
+## Kontribusi
+
+Menemukan klise AI yang belum tercatat? Itu kontribusi paling berguna. Buka issue dengan template **Laporan pola slop**, atau baca [CONTRIBUTING.md](CONTRIBUTING.md) untuk mengirim PR. Riwayat perubahan ada di [CHANGELOG.md](CHANGELOG.md).
+
+Proyek ini mengikuti [Kode Etik](CODE_OF_CONDUCT.md). Untuk masalah keamanan, lihat [SECURITY.md](SECURITY.md).
+
+## Lisensi
+
+[MIT](LICENSE) © 2026 Muhammad Fadhil Zidan Marpaung

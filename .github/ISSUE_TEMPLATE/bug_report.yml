@@ -1,0 +1,45 @@
+name: Laporan bug
+description: Installer gagal, skill tidak termuat, atau aturan menghasilkan teks yang salah
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Bagian yang bermasalah
+      options:
+        - Installer
+        - Skill tidak termuat oleh agen
+        - Aturan skill menghasilkan teks yang salah
+        - Dokumentasi
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agen dan versinya
+      placeholder: Antigravity 1.x, Claude Code 2.x, Cursor 1.x
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: OS dan versi Node.js
+      description: Isi kalau masalahnya di installer.
+      placeholder: Windows 11, Node 22.14
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah reproduksi
+      placeholder: |
+        1. Jalankan ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Yang diharapkan vs yang terjadi
+      description: Tempel output error atau cuplikan teks kalau ada.
+    validations:
+      required: true

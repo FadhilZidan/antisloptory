@@ -1,0 +1,13 @@
+{
+  "name": "antisloptory",
+  "version": "1.0.0",
+  "description": "Skill modular untuk agen AI: membuang klise, prosa ungu, dialog terapi, dan akhir sok moralis dari fiksi.",
+  "author": {
+    "name": "Muhammad Fadhil Zidan Marpaung",
+    "url": "https://github.com/FadhilZidan"
+  },
+  "homepage": "https://github.com/FadhilZidan/antisloptory",
+  "repository": "https://github.com/FadhilZidan/antisloptory",
+  "license": "MIT",
+  "keywords": ["fiction", "creative-writing", "anti-slop", "storytelling", "skills"]
+}

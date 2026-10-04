@@ -1,0 +1,14 @@
+{
+  "name": "antisloptory",
+  "owner": {
+    "name": "Muhammad Fadhil Zidan Marpaung",
+    "url": "https://github.com/FadhilZidan"
+  },
+  "plugins": [
+    {
+      "name": "antisloptory",
+      "source": "./",
+      "description": "Skill modular untuk fiksi bebas AI slop: antislop-core, antislop-pacing, antislop-ending."
+    }
+  ]
+}
