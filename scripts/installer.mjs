@@ -22,7 +22,17 @@ const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const SKILLS_DIR = path.join(ROOT_DIR, 'skills');
 
-const SKILL_NAMES = ['antislop-core', 'antislop-pacing', 'antislop-ending'];
+const SKILL_NAMES = [
+  'antislop-core',
+  'antislop-pacing',
+  'antislop-ending',
+  'antislop-romance',
+  'antislop-fantasy',
+  'antislop-scifi',
+  'antislop-thriller',
+  'antislop-horror',
+  'antislop-literary'
+];
 
 function parseArgs() {
   const args = process.argv.slice(2);

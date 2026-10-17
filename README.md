@@ -30,7 +30,9 @@ Kolom kiri: napas tertahan, tulang belakang dingin, senyum miring, dialog konsel
 
 ## Modul
 
-Tiga skill yang berdiri sendiri. Pakai satu, dua, atau ketiganya.
+Sembilan skill modular yang bisa dipakai terpisah atau digabungkan sesuai kebutuhan naskah.
+
+### 1. Modul Fondasi (Inti, Ritme, & Penutup)
 
 | Skill | Tugasnya | Pakai saat |
 |:--|:--|:--|
@@ -38,9 +40,23 @@ Tiga skill yang berdiri sendiri. Pakai satu, dua, atau ketiganya.
 | [`antislop-pacing`](skills/antislop-pacing/SKILL.md) | Ritme kalimat dan paragraf, geometri adegan, pergeseran kuasa, transisi | Adegan terasa datar atau terlalu rata panjang kalimatnya. |
 | [`antislop-ending`](skills/antislop-ending/SKILL.md) | Potong dua kalimat terakhir, tolak resolusi rapi, tutup pada benda fisik | Menulis atau mengaudit penutup bab dan cerita. |
 
-Dua berkas pendukung dipakai bersama oleh ketiga skill:
+### 2. Modul Spesifik Genre (Subgenre Populer, Niche, & Tropes)
+
+| Skill | Cakupan Subgenre & Tropes | Pakai saat |
+|:--|:--|:--|
+| [`antislop-romance`](skills/antislop-romance/SKILL.md) | *Contemporary, Historical, Rom-Com, Dark Romance, Romantasy, Paranormal, Omegaverse, Alien/Monster, Amish, Time-Slip* + tropes (*Enemies to Lovers, Slow Burn*, dll.) | Menulis romansa tanpa klise sengatan listrik, bau pinus/kayu manis generik, dan miskomunikasi bodoh. |
+| [`antislop-fantasy`](skills/antislop-fantasy/SKILL.md) | *High/Epic, Low, Urban, Grimdark, LitRPG/Progression, Cozy, Dark, Mythic, Sword & Planet, Gaslamp, Flintlock, Bizarro* + tropes (*Chosen One, Magic Comes with a Price*, dll.) | Menulis fantasi tanpa nama "Eldoria" generik, bola energi ungu gratis, dan *lore-dump* sejarah. |
+| [`antislop-scifi`](skills/antislop-scifi/SKILL.md) | *Hard Sci-Fi, Space Opera, Cyberpunk, Dystopian, Time Travel, Military, Solarpunk, Biopunk, Steampunk, Mundane, Social Sci-Fi, Weird West* + tropes (*Rogue AI, First Contact*, dll.) | Menulis fiksi ilmiah tanpa *technobabble* kosong, kota "Neo-Veridia", dan khotbah jiwa manusia vs mesin. |
+| [`antislop-thriller`](skills/antislop-thriller/SKILL.md) | *Psychological Thriller, Whodunit/Cozy, Police Procedural, Noir, Legal/Political, Domestic Suspense, Honkaku, Giallo, Medical, Financial* + tropes (*Unreliable Narrator, Locked-Room*, dll.) | Menulis misteri/kriminal dengan petunjuk *fair-play* konkret tanpa monolog pengakuan penjahat klise. |
+| [`antislop-horror`](skills/antislop-horror/SKILL.md) | *Psychological, Cosmic/Lovecraftian, Gothic, Body Horror, Survival, Slasher, Folk, Splatterpunk, Quiet Horror, Eco-Horror, Analogue/Found Footage* + tropes (*Final Girl, Eldritch*, dll.) | Menulis horor tanpa klise bau tembaga, senyum robek sampai pipi, dan eksposisi monster berlebihan. |
+| [`antislop-literary`](skills/antislop-literary/SKILL.md) | *Domestic Drama, Bildungsroman, Satire, Urban Drama, Historical Fiction, Dark Academia, Magical Realism, Kafkaesque, Autofiction, Picaresque, Epistolary* + tropes (*Generational Trauma*, dll.) | Menulis drama sastrawi dan urban lewat detail kelas sosial konkret tanpa melodrama puitis palsu. |
+
+### 3. Berkas Referensi Pendukung
+
+Dipakai bersama oleh seluruh modul skill:
 
 - [`anti-patterns.md`](skills/references/anti-patterns.md): daftar frasa terlarang, metafora basi, dan dialog klise (ID dan EN) beserta penggantinya.
+- [`structural-tropes.md`](skills/references/structural-tropes.md): katalog tropes struktural lintas genre (dinamika karakter, ritme plot seperti *Chekhov's Gun* & *Midpoint Shift*, serta *Hard vs. Soft Magic*).
 - [`examples.md`](skills/references/examples.md): studi kasus sebelum dan sesudah.
 
 ## Pasang
@@ -53,7 +69,7 @@ Butuh Node.js 18 atau lebih baru. Satu perintah, lalu pilih lokasi:
 npx github:FadhilZidan/antisloptory
 ```
 
-Installer menyalin ketiga skill beserta `references/` ke lokasi yang Anda pilih:
+Installer menyalin seluruh modul skill beserta `references/` ke lokasi yang Anda pilih:
 
 | Target | Lokasi |
 |:--|:--|
@@ -79,7 +95,7 @@ npx github:FadhilZidan/antisloptory --dry-run   # lihat apa yang akan disalin
 
 ### Manual
 
-Clone repo ini, lalu salin folder yang dibutuhkan. Salin `skills/references/` juga, karena ketiga skill merujuk ke sana.
+Clone repo ini, lalu salin folder yang dibutuhkan. Salin `skills/references/` juga, karena setiap skill merujuk ke sana.
 
 | Agen | Caranya |
 |:--|:--|
@@ -88,21 +104,21 @@ Clone repo ini, lalu salin folder yang dibutuhkan. Salin `skills/references/` ju
 | Cursor | Tempel isi `SKILL.md` ke `.cursor/rules/antislop-fiction.mdc` atau `.cursorrules`. |
 | Windsurf | Tempel isi `SKILL.md` ke `.windsurfrules`. |
 | Copilot dan agen lain | Tempel isi `SKILL.md` ke `AGENTS.md`. |
-| ChatGPT (Custom GPT / Project) | Tempel `antislop-core/SKILL.md` dan `references/anti-patterns.md` ke kolom *Instructions*. |
+| ChatGPT (Custom GPT / Project) | Tempel `antislop-core/SKILL.md`, modul genre pilihan, dan `references/anti-patterns.md` ke kolom *Instructions*. |
 
 ### Perbarui dan hapus
 
-Jalankan installer lagi untuk memperbarui; berkas lama ditimpa. Untuk menghapus, buang folder `antislop-core`, `antislop-pacing`, `antislop-ending`, dan `references` dari lokasi pemasangan.
+Jalankan installer lagi untuk memperbarui; berkas lama ditimpa. Untuk menghapus, buang folder `antislop-*` dan `references` dari lokasi pemasangan.
 
 ## Pakai
 
 Agen yang mendukung skill akan memuatnya sendiri saat percakapan menyentuh penulisan fiksi. Menyebut nama modul membuatnya lebih pasti:
 
-> Tulis adegan pembuka cerita kriminal di pelabuhan Tanjung Priok, 1998. Pakai **antislop-core** dan **antislop-pacing**. Tokoh utamanya punya motif egois.
+> Tulis adegan pembuka cerita kriminal di pelabuhan Tanjung Priok, 1998. Pakai **antislop-core**, **antislop-pacing**, dan **antislop-thriller**. Tokoh utamanya punya motif egois.
 
-> Periksa penutup bab ini dengan **antislop-ending**. Kalau ada paragraf khotbah, hapus, dan tutup pada benda fisik: [tempel teks]
+> Buat adegan *slow burn* dengan trope *Enemies to Lovers* berlatar kantor hukum Jakarta. Pakai **antislop-romance** dan **antislop-core**.
 
-> Audit naskah ini dengan **antislop-core**. Daftar dulu temuannya, jangan langsung ubah.
+> Periksa penutup bab horor ini dengan **antislop-horror** dan **antislop-ending**. Kalau ada paragraf khotbah atau klise bau tembaga, hapus, dan tutup pada benda fisik: [tempel teks]
 
 ## Struktur repo
 
@@ -112,8 +128,15 @@ antisloptory/
 │   ├── antislop-core/SKILL.md      # filter dasar: diksi, karakter, dialog
 │   ├── antislop-pacing/SKILL.md    # ritme, adegan, transisi
 │   ├── antislop-ending/SKILL.md    # penutup tanpa khotbah
+│   ├── antislop-romance/SKILL.md   # genre Romance, subgenre & tropes
+│   ├── antislop-fantasy/SKILL.md   # genre Fantasy, subgenre & worldbuilding
+│   ├── antislop-scifi/SKILL.md     # genre Sci-Fi, subgenre & ekstrapolasi
+│   ├── antislop-thriller/SKILL.md  # genre Thriller, Mystery & Crime
+│   ├── antislop-horror/SKILL.md    # genre Horror, subgenre & uncanny
+│   ├── antislop-literary/SKILL.md  # genre Literary & Urban Drama
 │   └── references/
 │       ├── anti-patterns.md        # daftar frasa terlarang + pengganti
+│       ├── structural-tropes.md    # katalog tropes struktural lintas genre
 │       └── examples.md             # sebelum vs sesudah
 ├── scripts/
 │   ├── installer.mjs               # installer npx

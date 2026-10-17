@@ -89,6 +89,8 @@ Hindari frasa transisi malas yang sering dipakai AI:
 
 ## Referensi Terkait
 - Kamus lengkap frasa terlarang: [anti-patterns.md](../references/anti-patterns.md)
+- Katalog tropes struktural lintas genre: [structural-tropes.md](../references/structural-tropes.md)
 - Contoh sebelum dan sesudah: [examples.md](../references/examples.md)
 - Modul inti filter teks & diksi: [antislop-core](../antislop-core/SKILL.md)
 - Modul penutup cerita: [antislop-ending](../antislop-ending/SKILL.md)
+- Modul spesifik genre: [antislop-romance](../antislop-romance/SKILL.md) | [antislop-fantasy](../antislop-fantasy/SKILL.md) | [antislop-scifi](../antislop-scifi/SKILL.md) | [antislop-thriller](../antislop-thriller/SKILL.md) | [antislop-horror](../antislop-horror/SKILL.md) | [antislop-literary](../antislop-literary/SKILL.md)
